@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Insira o nome do Pokémon</h1>
+
+    <form action="/Pokemon" method="post">
+        <div>
+            <label for="nome">Nome do Pokémon:</label>
+            <input type="text" id="nome" name="nome" onchange="getPokemonInfo()">
+        </div>
+        <div>
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso" name="peso" readonly>
+        </div>
+        <div>
+            <label for="ataque">Ataque:</label>
+            <input type="text" id="ataque" name="ataque" readonly>
+        </div>
+        <div>
+            <label for="defesa">Defesa:</label>
+            <input type="text" id="defesa" name="defesa" readonly>
+        </div>
+        <div>
+            <label for="velocidade">Velocidade:</label>
+            <input type="text" id="velocidade" name="velocidade" readonly>
+        </div>
+        <div>
+            <label for="habilidade1">Habilidade 1:</label>
+            <input type="text" id="habilidade1" name="habilidade1" readonly>
+        </div>
+        <div>
+            <label for="habilidade2">Habilidade 2:</label>
+            <input type="text" id="habilidade2" name="habilidade2" readonly>
+        </div>
+        <button type="button">Exibir Informações</button>
+        <button type="submit">Cadastrar no Sistema</button>
+    </form>
+
+    <br><br>
+    <div id="msg"></div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
