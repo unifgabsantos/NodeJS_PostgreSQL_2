@@ -47,11 +47,11 @@ async function mostrarPokemons(requests, response) {
         const pokemonList = await retrievePokemons();
         const pokemons = pokemonList.rows;
         let listaHTML = "<h2>Pokémons Cadastrados</h2>";
-        pokemons.forEach(pokemon => { 
-            listaHTML += `<h3>${pokemon.nome}</h3>`; 
-            listaHTML += `<p>Peso: ${pokemon.peso}</p>`; 
-            listaHTML += `<p>Ataque: ${pokemon.ataque}</p>`; 
-            listaHTML += `<p>Defesa: ${pokemon.defesa}</p>`; 
+        pokemons.forEach(pokemon => {
+            listaHTML += `<h3>${pokemon.nome}</h3>`;
+            listaHTML += `<p>Peso: ${pokemon.peso}</p>`;
+            listaHTML += `<p>Ataque: ${pokemon.ataque}</p>`;
+            listaHTML += `<p>Defesa: ${pokemon.defesa}</p>`;
             listaHTML += `<p>Velocidade: ${pokemon.velocidade}</p>`;
             listaHTML += `<p>Habilidade 1: ${pokemon.habilidade1}</p>`;
             listaHTML += `<p>Habilidade 2: ${pokemon.habilidade2}</p>`;
